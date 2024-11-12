@@ -6,8 +6,8 @@ import (
 
 	"github.com/pierrec/lz4/v4"
 
-	"github.com/uptrace/go-clickhouse/ch/internal"
-	"github.com/uptrace/go-clickhouse/ch/internal/cityhash102"
+	"github.com/RecoLabs/go-clickhouse/ch/internal"
+	"github.com/RecoLabs/go-clickhouse/ch/internal/cityhash102"
 )
 
 const (

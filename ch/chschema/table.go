@@ -7,9 +7,9 @@ import (
 	"github.com/codemodus/kace"
 	"github.com/jinzhu/inflection"
 
-	"github.com/uptrace/go-clickhouse/ch/chtype"
-	"github.com/uptrace/go-clickhouse/ch/internal"
-	"github.com/uptrace/go-clickhouse/ch/internal/tagparser"
+	"github.com/RecoLabs/go-clickhouse/ch/chtype"
+	"github.com/RecoLabs/go-clickhouse/ch/internal"
+	"github.com/RecoLabs/go-clickhouse/ch/internal/tagparser"
 )
 
 const (

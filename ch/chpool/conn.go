@@ -6,7 +6,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/uptrace/go-clickhouse/ch/chproto"
+	"github.com/RecoLabs/go-clickhouse/ch/chproto"
 )
 
 var noDeadline = time.Time{}

@@ -14,8 +14,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/uptrace/go-clickhouse/ch"
-	"github.com/uptrace/go-clickhouse/chdebug"
+	"github.com/RecoLabs/go-clickhouse/ch"
+	"github.com/RecoLabs/go-clickhouse/chdebug"
 )
 
 func chDB(opts ...ch.Option) *ch.DB {

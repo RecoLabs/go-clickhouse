@@ -6,8 +6,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/uptrace/go-clickhouse/ch/chschema"
-	"github.com/uptrace/go-clickhouse/ch/internal"
+	"github.com/RecoLabs/go-clickhouse/ch/chschema"
+	"github.com/RecoLabs/go-clickhouse/ch/internal"
 )
 
 type withQuery struct {

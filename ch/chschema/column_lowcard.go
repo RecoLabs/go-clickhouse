@@ -5,7 +5,7 @@ import (
 	"math"
 	"reflect"
 
-	"github.com/uptrace/go-clickhouse/ch/chproto"
+	"github.com/RecoLabs/go-clickhouse/ch/chproto"
 )
 
 type LCStringColumn struct {

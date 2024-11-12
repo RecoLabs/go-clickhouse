@@ -8,7 +8,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/uptrace/go-clickhouse/ch/internal"
+	"github.com/RecoLabs/go-clickhouse/ch/internal"
 )
 
 var (

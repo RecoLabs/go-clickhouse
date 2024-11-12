@@ -4,8 +4,8 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/uptrace/go-clickhouse/ch/chschema"
-	"github.com/uptrace/go-clickhouse/ch/internal"
+	"github.com/RecoLabs/go-clickhouse/ch/chschema"
+	"github.com/RecoLabs/go-clickhouse/ch/internal"
 )
 
 type DropTableQuery struct {

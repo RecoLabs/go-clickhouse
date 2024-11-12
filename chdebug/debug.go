@@ -9,8 +9,8 @@ import (
 	"reflect"
 	"time"
 
+	"github.com/RecoLabs/go-clickhouse/ch"
 	"github.com/fatih/color"
-	"github.com/uptrace/go-clickhouse/ch"
 )
 
 type Option func(*QueryHook)
@@ -40,9 +40,9 @@ func WithWriter(w io.Writer) Option {
 
 // FromEnv configures the hook using the environment variable value.
 // For example, WithEnv("CHDEBUG"):
-//    - CHDEBUG=0 - disables the hook.
-//    - CHDEBUG=1 - enables the hook.
-//    - CHDEBUG=2 - enables the hook and verbose mode.
+//   - CHDEBUG=0 - disables the hook.
+//   - CHDEBUG=1 - enables the hook.
+//   - CHDEBUG=2 - enables the hook and verbose mode.
 func FromEnv(keys ...string) Option {
 	if len(keys) == 0 {
 		keys = []string{"CHDEBUG"}

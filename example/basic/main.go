@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/uptrace/go-clickhouse/ch"
-	"github.com/uptrace/go-clickhouse/chdebug"
+	"github.com/RecoLabs/go-clickhouse/ch"
+	"github.com/RecoLabs/go-clickhouse/chdebug"
 )
 
 type Model struct {

@@ -3,7 +3,7 @@ package chschema
 import (
 	"fmt"
 
-	"github.com/uptrace/go-clickhouse/ch/chproto"
+	"github.com/RecoLabs/go-clickhouse/ch/chproto"
 )
 
 type Block struct {

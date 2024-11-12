@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/uptrace/go-clickhouse/ch"
+	"github.com/RecoLabs/go-clickhouse/ch"
 )
 
 type MigratorOption func(m *Migrator)

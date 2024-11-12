@@ -4,8 +4,8 @@ import (
 	"context"
 	"reflect"
 
-	"github.com/uptrace/go-clickhouse/ch/chschema"
-	"github.com/uptrace/go-clickhouse/ch/internal"
+	"github.com/RecoLabs/go-clickhouse/ch/chschema"
+	"github.com/RecoLabs/go-clickhouse/ch/internal"
 )
 
 type sliceTableModel struct {
