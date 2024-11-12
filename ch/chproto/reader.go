@@ -8,7 +8,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/uptrace/go-clickhouse/ch/internal"
+	"github.com/RecoLabs/go-clickhouse/ch/internal"
 )
 
 type reader interface {

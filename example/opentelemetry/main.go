@@ -5,15 +5,15 @@ import (
 	"math/rand"
 	"time"
 
+	"github.com/RecoLabs/go-clickhouse/ch"
+	"github.com/RecoLabs/go-clickhouse/chotel"
 	"github.com/brianvoe/gofakeit/v5"
-	"github.com/uptrace/go-clickhouse/ch"
-	"github.com/uptrace/go-clickhouse/chotel"
 	"github.com/uptrace/opentelemetry-go-extra/otelplay"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/codes"
 )
 
-var tracer = otel.Tracer("github.com/uptrace/go-clickhouse/example/opentelemetry")
+var tracer = otel.Tracer("github.com/RecoLabs/go-clickhouse/example/opentelemetry")
 
 func main() {
 	ctx := context.Background()
