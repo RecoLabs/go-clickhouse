@@ -118,12 +118,12 @@ func (q *InsertQuery) AppendQuery(fmter chschema.Formatter, b []byte) (_ []byte,
 		b = append(b, ")"...)
 	}
 
-	b, err = q.appendValues(fmter, b)
+	b, err = q.appendSettings(fmter, b)
 	if err != nil {
 		return nil, err
 	}
 
-	b, err = q.appendSettings(fmter, b)
+	b, err = q.appendValues(fmter, b)
 	if err != nil {
 		return nil, err
 	}
