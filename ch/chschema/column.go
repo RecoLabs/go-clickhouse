@@ -73,6 +73,12 @@ func (c *ColumnOf[T]) AllocForReading(numRow int) {
 	}
 }
 
+func (c *ColumnOf[T]) AllocForReadingArray(numRow int) {
+	if cap(c.Column) < numRow {
+		c.Column = make([]T, 0, numRow)
+	}
+}
+
 func (c *ColumnOf[T]) ResetForWriting(numRow int) {
 	if cap(c.Column) >= numRow {
 		c.Column = c.Column[:0]

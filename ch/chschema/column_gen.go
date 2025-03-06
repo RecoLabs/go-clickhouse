@@ -2254,7 +2254,7 @@ func (c *ArrayStringColumn) ReadFrom(rd *chproto.Reader, numRow int) error {
 		return nil
 	}
 
-	c.AllocForReading(numRow)
+	c.AllocForReadingArray(numRow)
 
 	offsets, err := c.readOffsets(rd, numRow)
 	if err != nil {
@@ -2266,8 +2266,9 @@ func (c *ArrayStringColumn) ReadFrom(rd *chproto.Reader, numRow int) error {
 	}
 
 	var prev int
+	arrayIndex := len(c.Column)
 	for i, offset := range offsets {
-		c.Column[i] = c.elem.Column[prev:offset]
+		c.Column[arrayIndex+i] = c.elem.Column[prev:offset]
 		prev = offset
 	}
 
